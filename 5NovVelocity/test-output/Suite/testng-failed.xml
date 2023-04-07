@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="classes" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="Testing.CrossBrowser">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="To_verify_the_ProgressPage"/>
+          <include name="To_verify_the_TeacherPage"/>
+          <include name="openBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- Testing.CrossBrowser -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="1" parallel="classes" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="Testing.CrossBrowser">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="To_verify_the_ProgressPage"/>
+          <include name="To_verify_the_TeacherPage"/>
+          <include name="openBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- Testing.CrossBrowser -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
